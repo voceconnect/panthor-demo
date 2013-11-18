@@ -1,0 +1,33 @@
+{
+    "name": "voceconnect/panthor-demo",
+    "description": "Single Page Theme Project Demo",
+    "authors": [],
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url" : "http://wp-plugins.packagist.voceconnect.com/"
+        },
+        {
+            "type": "composer",
+            "url" : "http://packagist.voceconnect.com"
+        },
+        {
+            "type": "git",
+            "url" : "git@github.com:voceconnect/panthor.git"
+        }
+    ],
+    "config": {
+        "vendor-dir": "wp-content/mu-plugins"
+    },
+    "require"     : {
+        "voceconnect/wordpress": "~3.7.0",
+        "wpackagist/memcached": "2.0.0"
+    },
+    "extra"       : {
+        "installer-paths": {
+            "wp/": ["voceconnect/wordpress"],
+            "wp-content/drop-ins/{$name}/": ["wpackagist/memcached"]
+        }
+    }
+}

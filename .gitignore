@@ -1,0 +1,33 @@
+# system files
+.htaccess
+.htpasswd
+.DS_Store
+Thumbs.db
+sitemap.xml*
+
+# wordpress files
+/*.php
+wp
+wp-content/mu-plugins
+wp-content/index.php
+wp-content/uploads
+wp-content/themes/twenty*
+wp-content/plugins/hello.php
+wp-content/themes/index.php
+wp-content/plugins/index.php
+wp-content/drop-ins
+
+# caching
+wp-content/cache/*
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+
+# sass
+sass_cache
+
+# npm
+node_modules
+
+# editor files
+.idea/*
+*.sublime-*
