@@ -15,6 +15,7 @@
     "bugs": {
         "url": "https://github.com/voceconnect/panthor-demo/issues"
     },
+    "minimum-stability": "dev",
     "devDependencies": {
         "grunt-voce-plugins": "latest",
         "grunt-hub": "latest",
