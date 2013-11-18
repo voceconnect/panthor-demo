@@ -6,7 +6,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url" : "http://wp-plugins.packagist.voceconnect.com/"
+            "url" : "http://wp-plugins.packagist.voceconnect.com"
         },
         {
             "type": "composer",
@@ -25,7 +25,8 @@
         "wpackagist/memcached": "2.0.0",
         "voceconnect/panthor": "9999999-dev"
     },
-    "extra"       : {
+    "minimum-stability": "dev",
+    "extra": {
         "installer-paths": {
             "wp/": ["voceconnect/wordpress"],
             "wp-content/drop-ins/{$name}/": ["wpackagist/memcached"]
