@@ -85,7 +85,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:voceconnect/panthor.git",
-                "reference": "e7abf192d06b988eeefdc2f6bbbe506329e8f7fe"
+                "reference": "3da6f7451b66389e1e5f5cfe7f376cf72074a0c0"
             },
             "require": {
                 "voceconnect/voce-post-meta": "~1.0",
@@ -103,7 +103,7 @@
                 }
             },
             "description": "Panthor Single Page Theme Project",
-            "time": "2013-11-18 16:10:12"
+            "time": "2013-11-18 18:51:40"
         },
         {
             "name": "voceconnect/voce-post-meta",

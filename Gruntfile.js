@@ -28,24 +28,24 @@ module.exports = function(grunt) {
         default: "development"
       },
       production: [
+      "composer:install:no-dev:optimize-autoloader",
         "shell:npmInstall",
-        "hub",
-        "composer:install:no-dev:optimize-autoloader"
+        "hub"
       ],
       uat: [
+        "composer:install:no-dev:optimize-autoloader",
         "shell:npmInstall",
-        "hub",
-        "composer:install:no-dev:optimize-autoloader"
+        "hub"
       ],
       staging: [
+        "composer:install",
         "shell:npmInstall",
-        "hub",
-        "composer:install"
+        "hub"
       ],
       development: [
+        "composer:install",
         "shell:npmInstall",
-        "hub",
-        "composer:install"
+        "hub"
       ]
     }
   });
