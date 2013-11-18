@@ -1,0 +1,23 @@
+{
+    "name": "panthor-demo",
+    "description": "Panthor Demo",
+    "version": "1.0.0",
+    "wpVersion": "3.7.0.0",
+    "projectType" : "wordpress",
+    "keywords": [
+        "wordpress",
+        "panthor"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:voceconnect/panthor-demo.git"
+    },
+    "bugs": {
+        "url": "https://github.com/voceconnect/panthor-demo/issues"
+    },
+    "devDependencies": {
+        "grunt-voce-plugins": "latest",
+        "grunt-hub": "latest",
+        "grunt-shell": "latest"
+    }
+}

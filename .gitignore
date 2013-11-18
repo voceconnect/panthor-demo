@@ -16,6 +16,9 @@ wp-content/plugins/hello.php
 wp-content/themes/index.php
 wp-content/plugins/index.php
 wp-content/drop-ins
+wp-content/plugins/wp-google-fonts
+wp-content/plugins/wp-jquery-lightbox
+wp-content/themes/panthor
 
 # caching
 wp-content/cache/*

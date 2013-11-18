@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "957f46df671e291891b22133f5dd7f10",
+    "hash": "baf0b3d6c55db142dd4c47b484e47e54",
     "packages": [
         {
             "name": "composer/installers",
@@ -80,6 +80,151 @@
             "time": "2013-10-24 16:13:49"
         },
         {
+            "name": "voceconnect/panthor",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:voceconnect/panthor.git",
+                "reference": "e7abf192d06b988eeefdc2f6bbbe506329e8f7fe"
+            },
+            "require": {
+                "voceconnect/voce-post-meta": "~1.0",
+                "voceconnect/voce-post-meta-colors": "~1.0",
+                "voceconnect/voce-settings-api": "~0.4",
+                "wpackagist/wp-google-fonts": "9999999-dev",
+                "wpackagist/wp-jquery-lightbox": "~1.4.5"
+            },
+            "type": "wordpress-theme",
+            "extra": {
+                "installer-paths": {
+                    "vendor/{$name}/": [
+                        "type:wordpress-plugin"
+                    ]
+                }
+            },
+            "description": "Panthor Single Page Theme Project",
+            "time": "2013-11-18 16:10:12"
+        },
+        {
+            "name": "voceconnect/voce-post-meta",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voceconnect/voce-post-meta.git",
+                "reference": "ab080abedbe1be1559546e7dd0dea547507fc13b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voceconnect/voce-post-meta/zipball/ab080abedbe1be1559546e7dd0dea547507fc13b",
+                "reference": "ab080abedbe1be1559546e7dd0dea547507fc13b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "voce-post-meta.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2+"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Pretty",
+                    "email": "mpretty@voceconnect.com"
+                },
+                {
+                    "name": "Kevin Langley Jr",
+                    "email": "klangley@voceconnect.com"
+                },
+                {
+                    "name": "Jeff Stieler",
+                    "email": "jeff@voceconnect.com"
+                },
+                {
+                    "name": "Mark Parolisi",
+                    "email": "mark@voceconnect.com"
+                },
+                {
+                    "name": "Gary Smirny",
+                    "email": "gary@voceconnect.com"
+                }
+            ],
+            "description": "Easily create post metaboxes and add fields",
+            "keywords": [
+                "post meta",
+                "wordpress"
+            ],
+            "time": "2013-10-31 13:29:10"
+        },
+        {
+            "name": "voceconnect/voce-post-meta-colors",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voceconnect/voce-post-meta-colors.git",
+                "reference": "613abc2f7ad81b42a1e2f683e45e49b989c0c63a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voceconnect/voce-post-meta-colors/zipball/613abc2f7ad81b42a1e2f683e45e49b989c0c63a",
+                "reference": "613abc2f7ad81b42a1e2f683e45e49b989c0c63a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "voce-post-meta-colors.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2+"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Parolisi",
+                    "email": "mark@voceconnect.com"
+                }
+            ],
+            "description": "Voce Post Meta plugin extension for creating color fields",
+            "time": "2013-11-06 16:08:33"
+        },
+        {
+            "name": "voceconnect/voce-settings-api",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voceconnect/voce-settings-api.git",
+                "reference": "f7bf8018b6e26825a00aaf02eca896c0293d6a9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voceconnect/voce-settings-api/zipball/f7bf8018b6e26825a00aaf02eca896c0293d6a9a",
+                "reference": "f7bf8018b6e26825a00aaf02eca896c0293d6a9a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "voce-settings-api.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2+"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Pretty",
+                    "email": "mpretty@voceconnect.com"
+                }
+            ],
+            "description": "A simplification of the core WordPress settings API",
+            "time": "2013-11-07 15:51:04"
+        },
+        {
             "name": "voceconnect/wordpress",
             "version": "3.7.1",
             "source": {
@@ -112,6 +257,36 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/extend/plugins/memcached"
+        },
+        {
+            "name": "wpackagist/wp-google-fonts",
+            "version": "trunk",
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-google-fonts.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/wp-google-fonts"
+        },
+        {
+            "name": "wpackagist/wp-jquery-lightbox",
+            "version": "1.4.5",
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-jquery-lightbox.1.4.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/wp-jquery-lightbox"
         }
     ],
     "packages-dev": [
@@ -121,9 +296,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "voceconnect/panthor": 20
+    },
     "platform": [
 
     ],
