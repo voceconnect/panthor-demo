@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c"
+                "reference": "9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d792632d27e1980d921cbbba12eab7b888338d4c",
-                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c",
+                "url": "https://api.github.com/repos/composer/installers/zipball/9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94",
+                "reference": "9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94",
                 "shasum": ""
             },
             "replace": {
@@ -53,31 +53,40 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
+                "Craft",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
                 "agl",
+                "annotatecms",
                 "cakephp",
                 "codeigniter",
                 "concrete5",
+                "croogo",
                 "drupal",
+                "elgg",
                 "fuelphp",
                 "installer",
                 "joomla",
                 "kohana",
                 "laravel",
-                "li3",
                 "lithium",
+                "magento",
                 "mako",
+                "mediawiki",
                 "modulework",
                 "phpbb",
+                "piwik",
                 "ppi",
+                "shopware",
                 "silverstripe",
                 "symfony",
+                "typo3",
                 "wordpress",
-                "zend"
+                "zend",
+                "zikula"
             ],
-            "time": "2013-10-24 16:13:49"
+            "time": "2014-02-12 21:21:55"
         },
         {
             "name": "voceconnect/panthor",
@@ -85,12 +94,14 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:voceconnect/panthor.git",
-                "reference": "3da6f7451b66389e1e5f5cfe7f376cf72074a0c0"
+                "reference": "c016f7c4d088de980ce53c49168f14a3541308a3"
             },
             "require": {
                 "voceconnect/voce-post-meta": "~1.0",
                 "voceconnect/voce-post-meta-colors": "~1.0",
                 "voceconnect/voce-settings-api": "~0.4",
+                "voceconnect/wp-dependencies": "~0.1",
+                "wpackagist/simple-page-ordering": "~2.1",
                 "wpackagist/wp-google-fonts": "9999999-dev",
                 "wpackagist/wp-jquery-lightbox": "~1.4.5"
             },
@@ -103,20 +114,20 @@
                 }
             },
             "description": "Panthor Single Page Theme Project",
-            "time": "2013-11-18 18:51:40"
+            "time": "2014-02-14 15:44:24"
         },
         {
             "name": "voceconnect/voce-post-meta",
-            "version": "v1.0.0",
+            "version": "v1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voceconnect/voce-post-meta.git",
-                "reference": "ab080abedbe1be1559546e7dd0dea547507fc13b"
+                "reference": "ebdb07aeb79017bfee658fc1a7d60127e458a29b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voceconnect/voce-post-meta/zipball/ab080abedbe1be1559546e7dd0dea547507fc13b",
-                "reference": "ab080abedbe1be1559546e7dd0dea547507fc13b",
+                "url": "https://api.github.com/repos/voceconnect/voce-post-meta/zipball/ebdb07aeb79017bfee658fc1a7d60127e458a29b",
+                "reference": "ebdb07aeb79017bfee658fc1a7d60127e458a29b",
                 "shasum": ""
             },
             "type": "library",
@@ -156,21 +167,24 @@
                 "post meta",
                 "wordpress"
             ],
-            "time": "2013-10-31 13:29:10"
+            "time": "2014-01-02 20:55:53"
         },
         {
             "name": "voceconnect/voce-post-meta-colors",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voceconnect/voce-post-meta-colors.git",
-                "reference": "613abc2f7ad81b42a1e2f683e45e49b989c0c63a"
+                "reference": "5ea5e16d595a478df6814264a01775a5fea282e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voceconnect/voce-post-meta-colors/zipball/613abc2f7ad81b42a1e2f683e45e49b989c0c63a",
-                "reference": "613abc2f7ad81b42a1e2f683e45e49b989c0c63a",
+                "url": "https://api.github.com/repos/voceconnect/voce-post-meta-colors/zipball/5ea5e16d595a478df6814264a01775a5fea282e1",
+                "reference": "5ea5e16d595a478df6814264a01775a5fea282e1",
                 "shasum": ""
+            },
+            "require": {
+                "voceconnect/voce-post-meta": "~1.4"
             },
             "type": "library",
             "autoload": {
@@ -189,20 +203,20 @@
                 }
             ],
             "description": "Voce Post Meta plugin extension for creating color fields",
-            "time": "2013-11-06 16:08:33"
+            "time": "2014-01-02 19:57:05"
         },
         {
             "name": "voceconnect/voce-settings-api",
-            "version": "v0.4.0",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voceconnect/voce-settings-api.git",
-                "reference": "f7bf8018b6e26825a00aaf02eca896c0293d6a9a"
+                "reference": "9c8066b1a26eb59a36a0ce8da0d4d0b2c581811f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voceconnect/voce-settings-api/zipball/f7bf8018b6e26825a00aaf02eca896c0293d6a9a",
-                "reference": "f7bf8018b6e26825a00aaf02eca896c0293d6a9a",
+                "url": "https://api.github.com/repos/voceconnect/voce-settings-api/zipball/9c8066b1a26eb59a36a0ce8da0d4d0b2c581811f",
+                "reference": "9c8066b1a26eb59a36a0ce8da0d4d0b2c581811f",
                 "shasum": ""
             },
             "type": "library",
@@ -222,7 +236,7 @@
                 }
             ],
             "description": "A simplification of the core WordPress settings API",
-            "time": "2013-11-07 15:51:04"
+            "time": "2013-11-27 17:19:08"
         },
         {
             "name": "voceconnect/wordpress",
@@ -244,6 +258,45 @@
             "type": "wordpress-plugin"
         },
         {
+            "name": "voceconnect/wp-dependencies",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voceconnect/wp-dependencies.git",
+                "reference": "4f3f58d5abef36b28bcdd8e97c3fef6687201d65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voceconnect/wp-dependencies/zipball/4f3f58d5abef36b28bcdd8e97c3fef6687201d65",
+                "reference": "4f3f58d5abef36b28bcdd8e97c3fef6687201d65",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "class-wp-dependency-loader.php"
+                ],
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Prettty",
+                    "email": "mpretty@voceconnect.com"
+                }
+            ],
+            "description": "A composer package for WordPress to help manage plugin dependencies.",
+            "time": "2013-11-05 19:12:23"
+        },
+        {
             "name": "wpackagist/memcached",
             "version": "2.0",
             "dist": {
@@ -259,8 +312,33 @@
             "homepage": "http://wordpress.org/extend/plugins/memcached"
         },
         {
+            "name": "wpackagist/simple-page-ordering",
+            "version": "2.1.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/simple-page-ordering/",
+                "reference": "tags/2.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/simple-page-ordering.2.1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/simple-page-ordering"
+        },
+        {
             "name": "wpackagist/wp-google-fonts",
-            "version": "trunk",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-google-fonts/",
+                "reference": "trunk"
+            },
             "dist": {
                 "type": "zip",
                 "url": "http://downloads.wordpress.org/plugin/wp-google-fonts.zip",
@@ -271,7 +349,8 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/wp-google-fonts"
+            "homepage": "http://wordpress.org/extend/plugins/wp-google-fonts",
+            "time": "2013-11-02 01:28:31"
         },
         {
             "name": "wpackagist/wp-jquery-lightbox",
