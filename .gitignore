@@ -1,36 +1,34 @@
 # system files
 .htaccess
 .htpasswd
+/config
+/node_modules
 .DS_Store
 Thumbs.db
 sitemap.xml*
+.sass-cache
+/nbproject/private/
+.idea
+.sass-cache/
 
-# wordpress files
-/*.php
-wp
-wp-content/mu-plugins
-wp-content/index.php
-wp-content/uploads
-wp-content/themes/twenty*
-wp-content/plugins/hello.php
-wp-content/themes/index.php
-wp-content/plugins/index.php
-wp-content/drop-ins
-wp-content/plugins/wp-google-fonts
-wp-content/plugins/wp-jquery-lightbox
-wp-content/themes/panthor
+# vip files
+REVISION
+.svn
+/wp-content/themes/vip
 
-# caching
-wp-content/cache/*
-wp-content/advanced-cache.php
-wp-content/wp-cache-config.php
+# wpms and wordpress files
+/wp
+/wp-config.php
+/wp-content/uploads
+/wp-content/blogs.dir
 
-# sass
-sass_cache
+ # composer managed plugins
+/wp-content/plugins/*
+/wp-content/drop-ins/*
+/wp-content/mu-plugins/*
 
-# npm
-node_modules
+# non-composer managed plugins
+!/wp-content/plugins/simple-page-ordering
 
-# editor files
-.idea/*
-*.sublime-*
+# for this app, composer manages the theme
+/wp-content/themes/*

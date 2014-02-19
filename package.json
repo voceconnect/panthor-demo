@@ -2,7 +2,6 @@
     "name": "panthor-demo",
     "description": "Panthor Demo",
     "version": "1.0.0",
-    "wpVersion": "3.7.0.0",
     "projectType" : "wordpress",
     "keywords": [
         "wordpress",

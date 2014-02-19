@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "cfe1b010cd2785cdc44946cac12b13f5",
+    "hash": "66e685cbcbc905544bf79347d7301a1a",
     "packages": [
         {
             "name": "composer/installers",
@@ -46,7 +46,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
+                    "homepage": "http://dontkry.com",
                     "role": "Developer"
                 }
             ],
@@ -94,7 +94,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:voceconnect/panthor.git",
-                "reference": "c016f7c4d088de980ce53c49168f14a3541308a3"
+                "reference": "13fab88e5fd268d747e6286491edf0ed9ff15bc6"
             },
             "require": {
                 "voceconnect/voce-post-meta": "~1.0",
@@ -114,7 +114,7 @@
                 }
             },
             "description": "Panthor Single Page Theme Project",
-            "time": "2014-02-14 15:44:24"
+            "time": "2014-02-18 19:17:14"
         },
         {
             "name": "voceconnect/voce-post-meta",
@@ -240,15 +240,15 @@
         },
         {
             "name": "voceconnect/wordpress",
-            "version": "3.7.1",
+            "version": "3.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress",
-                "reference": "3.7.1"
+                "reference": "3.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://wordpress.org/wordpress-3.7.1.zip",
+                "url": "http://wordpress.org/wordpress-3.8.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -289,7 +289,7 @@
             ],
             "authors": [
                 {
-                    "name": "Michael Prettty",
+                    "name": "Michael Pretty",
                     "email": "mpretty@voceconnect.com"
                 }
             ],
@@ -299,6 +299,11 @@
         {
             "name": "wpackagist/memcached",
             "version": "2.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/memcached/",
+                "reference": "tags/2.0"
+            },
             "dist": {
                 "type": "zip",
                 "url": "http://downloads.wordpress.org/plugin/memcached.2.0.zip",
@@ -355,6 +360,11 @@
         {
             "name": "wpackagist/wp-jquery-lightbox",
             "version": "1.4.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-jquery-lightbox/",
+                "reference": "tags/1.4.5"
+            },
             "dist": {
                 "type": "zip",
                 "url": "http://downloads.wordpress.org/plugin/wp-jquery-lightbox.1.4.5.zip",
