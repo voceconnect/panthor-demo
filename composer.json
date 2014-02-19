@@ -22,7 +22,7 @@
     },
     "require": {
         "voceconnect/wordpress": "~3.8.0",
-        "wpackagist/memcached": "2.0.0",
+        "wpackagist/memcached": "2.0.2",
         "voceconnect/panthor": "9999999-dev"
     },
     "minimum-stability": "dev",
