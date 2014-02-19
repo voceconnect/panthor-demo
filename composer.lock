@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "66e685cbcbc905544bf79347d7301a1a",
+    "hash": "e4cfceecf8573f11c89c275d5c68802e",
     "packages": [
         {
             "name": "composer/installers",
@@ -298,15 +298,15 @@
         },
         {
             "name": "wpackagist/memcached",
-            "version": "2.0",
+            "version": "2.0.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/memcached/",
-                "reference": "tags/2.0"
+                "reference": "tags/2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/memcached.2.0.zip",
+                "url": "http://downloads.wordpress.org/plugin/memcached.2.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
