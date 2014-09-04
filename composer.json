@@ -21,9 +21,9 @@
         "vendor-dir": "wp-content/mu-plugins"
     },
     "require": {
-        "voceconnect/wordpress": "~3.8.0",
+        "voceconnect/wordpress": "~3.9.0",
         "wpackagist/memcached": "2.0.2",
-        "voceconnect/panthor": "9999999-dev"
+        "voceconnect/panthor": "dev-v2"
     },
     "minimum-stability": "dev",
     "extra": {
