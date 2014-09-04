@@ -15,6 +15,10 @@
         {
             "type": "git",
             "url" : "git@github.com:voceconnect/panthor.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:voceconnect/custom-widget.git"
         }
     ],
     "config": {
@@ -23,7 +27,7 @@
     "require": {
         "voceconnect/wordpress": "~3.9.0",
         "wpackagist/memcached": "2.0.2",
-        "voceconnect/panthor": "dev-v2"
+        "voceconnect/panthor": "dev-new-develop"
     },
     "minimum-stability": "dev",
     "extra": {
