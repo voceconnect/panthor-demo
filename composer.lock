@@ -1,8 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
-        "This file is @generated automatically"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
     "hash": "e12c51044d0ef242501a154ab7f9efbf",
     "packages": [
@@ -395,7 +394,7 @@
             ],
             "authors": [
                 {
-                    "name": "Mike Pretty",
+                    "name": "Michael Prettty",
                     "email": "mpretty@voceconnect.com"
                 }
             ],
@@ -484,7 +483,7 @@
         },
         {
             "name": "wpackagist/siteorigin-panels",
-            "version": "1.5",
+            "version": "1.5.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/siteorigin-panels/",
@@ -546,6 +545,11 @@
         {
             "name": "wpackagist/wp-jquery-lightbox",
             "version": "1.4.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-jquery-lightbox/",
+                "reference": "tags/1.4.5"
+            },
             "dist": {
                 "type": "zip",
                 "url": "http://downloads.wordpress.org/plugin/wp-jquery-lightbox.1.4.5.zip",
@@ -556,7 +560,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/wp-jquery-lightbox"
+            "homepage": "http://wordpress.org/plugins/wp-jquery-lightbox/"
         }
     ],
     "packages-dev": [
@@ -569,7 +573,6 @@
     "stability-flags": {
         "voceconnect/panthor": 20
     },
-    "prefer-stable": false,
     "platform": [
 
     ],
