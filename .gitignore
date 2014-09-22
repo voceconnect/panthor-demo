@@ -31,4 +31,4 @@ REVISION
 !/wp-content/plugins/simple-page-ordering
 
 # for this app, composer manages the theme
-/wp-content/themes/*
+/wp-content/themes/panthor
