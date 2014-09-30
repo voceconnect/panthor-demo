@@ -1,6 +1,6 @@
 <a name="#home"></a>
-<header role="banner">
-  <ul>
+<header role="banner" id="spy-nav">
+  <ul class="nav">
   <?php
   // This is not a subpage
   $children = get_pages( array(
