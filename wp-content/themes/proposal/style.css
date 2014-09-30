@@ -1,0 +1,3464 @@
+/*!
+Theme Name: Voce Proposals
+Author: Pete Schiebel/Voce Platforms
+Description: The child theme specialized for Proposals, based on Panthor v2.
+Template: panthor
+Version: 1.0
+*/
+/*!
+Theme Name: Panthor
+Author: Pete Schiebel/Voce Platforms
+Author URI: http://voceplatforms.com
+Description: The custom single page theme developed by Voce Platforms, customized from Bootstrap.
+Version: 2.0
+*/
+/*!
+ * Bootstrap v3.0.2
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+/* line 12, ../panthor/sass/_bootstrap.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../panthor/sass/_bootstrap.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 14, ../panthor/sass/_bootstrap.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 15, ../panthor/sass/_bootstrap.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 16, ../panthor/sass/_bootstrap.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 17, ../panthor/sass/_bootstrap.scss */
+body {
+  margin: 0;
+}
+
+/* line 18, ../panthor/sass/_bootstrap.scss */
+a {
+  background: transparent;
+}
+
+/* line 19, ../panthor/sass/_bootstrap.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 20, ../panthor/sass/_bootstrap.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 21, ../panthor/sass/_bootstrap.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 22, ../panthor/sass/_bootstrap.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 23, ../panthor/sass/_bootstrap.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 24, ../panthor/sass/_bootstrap.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 25, ../panthor/sass/_bootstrap.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 26, ../panthor/sass/_bootstrap.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 27, ../panthor/sass/_bootstrap.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 28, ../panthor/sass/_bootstrap.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 29, ../panthor/sass/_bootstrap.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 30, ../panthor/sass/_bootstrap.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 31, ../panthor/sass/_bootstrap.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 32, ../panthor/sass/_bootstrap.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 33, ../panthor/sass/_bootstrap.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 34, ../panthor/sass/_bootstrap.scss */
+img {
+  border: 0;
+}
+
+/* line 35, ../panthor/sass/_bootstrap.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 36, ../panthor/sass/_bootstrap.scss */
+figure {
+  margin: 0;
+}
+
+/* line 37, ../panthor/sass/_bootstrap.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 38, ../panthor/sass/_bootstrap.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 39, ../panthor/sass/_bootstrap.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 40, ../panthor/sass/_bootstrap.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 41, ../panthor/sass/_bootstrap.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 42, ../panthor/sass/_bootstrap.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 43, ../panthor/sass/_bootstrap.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 44, ../panthor/sass/_bootstrap.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 45, ../panthor/sass/_bootstrap.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 46, ../panthor/sass/_bootstrap.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 47, ../panthor/sass/_bootstrap.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 48, ../panthor/sass/_bootstrap.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 49, ../panthor/sass/_bootstrap.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media print {
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 2cm .5cm;
+  }
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  select {
+    background: #fff !important;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  .navbar {
+    display: none;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  .table td, .table th {
+    background-color: #fff !important;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  .btn > .caret, .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  .label {
+    border: 1px solid #000;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  .table {
+    border-collapse: collapse !important;
+  }
+
+  /* line 50, ../panthor/sass/_bootstrap.scss */
+  .table-bordered th, .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}
+/* line 50, ../panthor/sass/_bootstrap.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 51, ../panthor/sass/_bootstrap.scss */
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 52, ../panthor/sass/_bootstrap.scss */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* line 53, ../panthor/sass/_bootstrap.scss */
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 54, ../panthor/sass/_bootstrap.scss */
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+/* line 54, ../panthor/sass/_bootstrap.scss */
+a:hover, a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+/* line 55, ../panthor/sass/_bootstrap.scss */
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/* line 56, ../panthor/sass/_bootstrap.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 57, ../panthor/sass/_bootstrap.scss */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 58, ../panthor/sass/_bootstrap.scss */
+.img-rounded {
+  border-radius: 6px;
+}
+
+/* line 59, ../panthor/sass/_bootstrap.scss */
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 60, ../panthor/sass/_bootstrap.scss */
+.img-circle {
+  border-radius: 50%;
+}
+
+/* line 61, ../panthor/sass/_bootstrap.scss */
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+/* line 62, ../panthor/sass/_bootstrap.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* line 63, ../panthor/sass/_bootstrap.scss */
+p {
+  margin: 0 0 10px;
+}
+
+/* line 64, ../panthor/sass/_bootstrap.scss */
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  /* line 64, ../panthor/sass/_bootstrap.scss */
+  .lead {
+    font-size: 21px;
+  }
+}
+/* line 65, ../panthor/sass/_bootstrap.scss */
+small, .small {
+  font-size: 85%;
+}
+
+/* line 66, ../panthor/sass/_bootstrap.scss */
+cite {
+  font-style: normal;
+}
+
+/* line 67, ../panthor/sass/_bootstrap.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 68, ../panthor/sass/_bootstrap.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 69, ../panthor/sass/_bootstrap.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 70, ../panthor/sass/_bootstrap.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+/* line 71, ../panthor/sass/_bootstrap.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+/* line 72, ../panthor/sass/_bootstrap.scss */
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 73, ../panthor/sass/_bootstrap.scss */
+h1 small, h2 small, h3 small {
+  font-size: 65%;
+}
+
+/* line 74, ../panthor/sass/_bootstrap.scss */
+h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 75, ../panthor/sass/_bootstrap.scss */
+h4 small, h5 small, h6 small {
+  font-size: 75%;
+}
+
+/* line 76, ../panthor/sass/_bootstrap.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 77, ../panthor/sass/_bootstrap.scss */
+h2 {
+  font-size: 30px;
+}
+
+/* line 78, ../panthor/sass/_bootstrap.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 79, ../panthor/sass/_bootstrap.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 80, ../panthor/sass/_bootstrap.scss */
+h5 {
+  font-size: 14px;
+}
+
+/* line 81, ../panthor/sass/_bootstrap.scss */
+h6 {
+  font-size: 12px;
+}
+
+/* line 82, ../panthor/sass/_bootstrap.scss */
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* line 83, ../panthor/sass/_bootstrap.scss */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* line 83, ../panthor/sass/_bootstrap.scss */
+ul ul, ol ul, ul ol, ol ol {
+  margin-bottom: 0;
+}
+
+/* line 84, ../panthor/sass/_bootstrap.scss */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 85, ../panthor/sass/_bootstrap.scss */
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 85, ../panthor/sass/_bootstrap.scss */
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 85, ../panthor/sass/_bootstrap.scss */
+.list-inline > li:first-child {
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 86, ../panthor/sass/_bootstrap.scss */
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* line 86, ../panthor/sass/_bootstrap.scss */
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+
+  /* line 86, ../panthor/sass/_bootstrap.scss */
+  .dl-horizontal dd:before, .dl-horizontal dd:after {
+    content: " ";
+    display: table;
+  }
+
+  /* line 86, ../panthor/sass/_bootstrap.scss */
+  .dl-horizontal dd:after {
+    clear: both;
+  }
+
+  /* line 86, ../panthor/sass/_bootstrap.scss */
+  .dl-horizontal dd:before, .dl-horizontal dd:after {
+    content: " ";
+    display: table;
+  }
+
+  /* line 86, ../panthor/sass/_bootstrap.scss */
+  .dl-horizontal dd:after {
+    clear: both;
+  }
+}
+/* line 86, ../panthor/sass/_bootstrap.scss */
+abbr[title], abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+
+/* line 87, ../panthor/sass/_bootstrap.scss */
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+/* line 88, ../panthor/sass/_bootstrap.scss */
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eeeeee;
+}
+
+/* line 88, ../panthor/sass/_bootstrap.scss */
+blockquote p {
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+/* line 89, ../panthor/sass/_bootstrap.scss */
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 90, ../panthor/sass/_bootstrap.scss */
+blockquote small {
+  display: block;
+  line-height: 1.428571429;
+  color: #999999;
+}
+
+/* line 90, ../panthor/sass/_bootstrap.scss */
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+
+/* line 91, ../panthor/sass/_bootstrap.scss */
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+}
+
+/* line 91, ../panthor/sass/_bootstrap.scss */
+blockquote.pull-right p, blockquote.pull-right small, blockquote.pull-right .small {
+  text-align: right;
+}
+
+/* line 92, ../panthor/sass/_bootstrap.scss */
+blockquote.pull-right small:before, blockquote.pull-right .small:before {
+  content: '';
+}
+
+/* line 93, ../panthor/sass/_bootstrap.scss */
+blockquote.pull-right small:after, blockquote.pull-right .small:after {
+  content: '\00A0 \2014';
+}
+
+/* line 94, ../panthor/sass/_bootstrap.scss */
+blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 95, ../panthor/sass/_bootstrap.scss */
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.428571429;
+}
+
+/* line 96, ../panthor/sass/_bootstrap.scss */
+code, kbd, pre, samp {
+  font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+}
+
+/* line 97, ../panthor/sass/_bootstrap.scss */
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+/* line 98, ../panthor/sass/_bootstrap.scss */
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+/* line 98, ../panthor/sass/_bootstrap.scss */
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* line 99, ../panthor/sass/_bootstrap.scss */
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+/* line 100, ../panthor/sass/_bootstrap.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 100, ../panthor/sass/_bootstrap.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+/* line 101, ../panthor/sass/_bootstrap.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 102, ../panthor/sass/_bootstrap.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+/* line 103, ../panthor/sass/_bootstrap.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 104, ../panthor/sass/_bootstrap.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 104, ../panthor/sass/_bootstrap.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 105, ../panthor/sass/_bootstrap.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 106, ../panthor/sass/_bootstrap.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 107, ../panthor/sass/_bootstrap.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 108, ../panthor/sass/_bootstrap.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 109, ../panthor/sass/_bootstrap.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11 {
+  float: left;
+}
+
+/* line 110, ../panthor/sass/_bootstrap.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 111, ../panthor/sass/_bootstrap.scss */
+.col-xs-11 {
+  width: 91.66666666666666%;
+}
+
+/* line 112, ../panthor/sass/_bootstrap.scss */
+.col-xs-10 {
+  width: 83.33333333333334%;
+}
+
+/* line 113, ../panthor/sass/_bootstrap.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 114, ../panthor/sass/_bootstrap.scss */
+.col-xs-8 {
+  width: 66.66666666666666%;
+}
+
+/* line 115, ../panthor/sass/_bootstrap.scss */
+.col-xs-7 {
+  width: 58.333333333333336%;
+}
+
+/* line 116, ../panthor/sass/_bootstrap.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 117, ../panthor/sass/_bootstrap.scss */
+.col-xs-5 {
+  width: 41.66666666666667%;
+}
+
+/* line 118, ../panthor/sass/_bootstrap.scss */
+.col-xs-4 {
+  width: 33.33333333333333%;
+}
+
+/* line 119, ../panthor/sass/_bootstrap.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 120, ../panthor/sass/_bootstrap.scss */
+.col-xs-2 {
+  width: 16.666666666666664%;
+}
+
+/* line 121, ../panthor/sass/_bootstrap.scss */
+.col-xs-1 {
+  width: 8.333333333333332%;
+}
+
+/* line 122, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 123, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-11 {
+  right: 91.66666666666666%;
+}
+
+/* line 124, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-10 {
+  right: 83.33333333333334%;
+}
+
+/* line 125, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 126, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-8 {
+  right: 66.66666666666666%;
+}
+
+/* line 127, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-7 {
+  right: 58.333333333333336%;
+}
+
+/* line 128, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 129, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-5 {
+  right: 41.66666666666667%;
+}
+
+/* line 130, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-4 {
+  right: 33.33333333333333%;
+}
+
+/* line 131, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 132, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-2 {
+  right: 16.666666666666664%;
+}
+
+/* line 133, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-1 {
+  right: 8.333333333333332%;
+}
+
+/* line 134, ../panthor/sass/_bootstrap.scss */
+.col-xs-pull-0 {
+  right: 0%;
+}
+
+/* line 135, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 136, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-11 {
+  left: 91.66666666666666%;
+}
+
+/* line 137, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-10 {
+  left: 83.33333333333334%;
+}
+
+/* line 138, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 139, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-8 {
+  left: 66.66666666666666%;
+}
+
+/* line 140, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-7 {
+  left: 58.333333333333336%;
+}
+
+/* line 141, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 142, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-5 {
+  left: 41.66666666666667%;
+}
+
+/* line 143, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-4 {
+  left: 33.33333333333333%;
+}
+
+/* line 144, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 145, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-2 {
+  left: 16.666666666666664%;
+}
+
+/* line 146, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-1 {
+  left: 8.333333333333332%;
+}
+
+/* line 147, ../panthor/sass/_bootstrap.scss */
+.col-xs-push-0 {
+  left: 0%;
+}
+
+/* line 148, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+/* line 149, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66666666666666%;
+}
+
+/* line 150, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333333333334%;
+}
+
+/* line 151, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 152, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66666666666666%;
+}
+
+/* line 153, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-7 {
+  margin-left: 58.333333333333336%;
+}
+
+/* line 154, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 155, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66666666666667%;
+}
+
+/* line 156, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333333333333%;
+}
+
+/* line 157, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 158, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-2 {
+  margin-left: 16.666666666666664%;
+}
+
+/* line 159, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-1 {
+  margin-left: 8.333333333333332%;
+}
+
+/* line 160, ../panthor/sass/_bootstrap.scss */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+@media (min-width: 768px) {
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .container {
+    width: 750px;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11 {
+    float: left;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-11 {
+    width: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-10 {
+    width: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-8 {
+    width: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-7 {
+    width: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-5 {
+    width: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-4 {
+    width: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-2 {
+    width: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-1 {
+    width: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-pull-0 {
+    right: 0%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-push-0 {
+    left: 0%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .container {
+    width: 970px;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
+    float: left;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-11 {
+    width: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-10 {
+    width: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-8 {
+    width: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-7 {
+    width: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-5 {
+    width: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-2 {
+    width: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-1 {
+    width: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-pull-0 {
+    right: 0%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-push-0 {
+    left: 0%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .container {
+    width: 1170px;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11 {
+    float: left;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-11 {
+    width: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-10 {
+    width: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-8 {
+    width: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-7 {
+    width: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-5 {
+    width: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-4 {
+    width: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-2 {
+    width: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-1 {
+    width: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-pull-0 {
+    right: 0%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-push-0 {
+    left: 0%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  /* line 161, ../panthor/sass/_bootstrap.scss */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+/* line 161, ../panthor/sass/_bootstrap.scss */
+table {
+  max-width: 100%;
+  background-color: transparent;
+}
+
+/* line 162, ../panthor/sass/_bootstrap.scss */
+th {
+  text-align: left;
+}
+
+/* line 163, ../panthor/sass/_bootstrap.scss */
+table col[class*="col-"] {
+  float: none;
+  display: table-column;
+}
+
+/* line 164, ../panthor/sass/_bootstrap.scss */
+table td[class*="col-"], table th[class*="col-"] {
+  float: none;
+  display: table-cell;
+}
+
+@media (max-width: 767px) {
+  /* line 165, ../panthor/sass/_bootstrap.scss */
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* line 165, ../panthor/sass/_bootstrap.scss */
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+
+  /* line 165, ../panthor/sass/_bootstrap.scss */
+  .table-responsive > .table > thead > tr > th, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+
+  /* line 165, ../panthor/sass/_bootstrap.scss */
+  .table-responsive > .table-bordered {
+    border: 0;
+  }
+
+  /* line 165, ../panthor/sass/_bootstrap.scss */
+  .table-responsive > .table-bordered > thead > tr > th:first-child, .table-responsive > .table-bordered > tbody > tr > th:first-child, .table-responsive > .table-bordered > tfoot > tr > th:first-child, .table-responsive > .table-bordered > thead > tr > td:first-child, .table-responsive > .table-bordered > tbody > tr > td:first-child, .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+
+  /* line 165, ../panthor/sass/_bootstrap.scss */
+  .table-responsive > .table-bordered > thead > tr > th:last-child, .table-responsive > .table-bordered > tbody > tr > th:last-child, .table-responsive > .table-bordered > tfoot > tr > th:last-child, .table-responsive > .table-bordered > thead > tr > td:last-child, .table-responsive > .table-bordered > tbody > tr > td:last-child, .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+
+  /* line 165, ../panthor/sass/_bootstrap.scss */
+  .table-responsive > .table-bordered > tbody > tr:last-child > th, .table-responsive > .table-bordered > tfoot > tr:last-child > th, .table-responsive > .table-bordered > tbody > tr:last-child > td, .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+/* line 165, ../panthor/sass/_bootstrap.scss */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 166, ../panthor/sass/_bootstrap.scss */
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 167, ../panthor/sass/_bootstrap.scss */
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* line 168, ../panthor/sass/_bootstrap.scss */
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 169, ../panthor/sass/_bootstrap.scss */
+input[type="radio"], input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+
+/* line 170, ../panthor/sass/_bootstrap.scss */
+input[type="file"] {
+  display: block;
+}
+
+/* line 171, ../panthor/sass/_bootstrap.scss */
+select[multiple], select[size] {
+  height: auto;
+}
+
+/* line 172, ../panthor/sass/_bootstrap.scss */
+select optgroup {
+  font-size: inherit;
+  font-style: inherit;
+  font-family: inherit;
+}
+
+/* line 173, ../panthor/sass/_bootstrap.scss */
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/* line 174, ../panthor/sass/_bootstrap.scss */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+
+/* line 175, ../panthor/sass/_bootstrap.scss */
+output {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+}
+
+/* line 176, ../panthor/sass/_bootstrap.scss */
+textarea.form-control {
+  height: auto;
+}
+
+/* line 177, ../panthor/sass/_bootstrap.scss */
+input[type="radio"][disabled], input[type="checkbox"][disabled], .radio[disabled], .radio-inline[disabled], .checkbox[disabled], .checkbox-inline[disabled], fieldset[disabled] input[type="radio"], fieldset[disabled] input[type="checkbox"], fieldset[disabled] .radio, fieldset[disabled] .radio-inline, fieldset[disabled] .checkbox, fieldset[disabled] .checkbox-inline {
+  cursor: not-allowed;
+}
+
+/* line 178, ../panthor/sass/_bootstrap.scss */
+.input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+/* line 178, ../panthor/sass/_bootstrap.scss */
+select.input-sm {
+  height: 30px;
+  line-height: 30px;
+}
+
+/* line 179, ../panthor/sass/_bootstrap.scss */
+textarea.input-sm {
+  height: auto;
+}
+
+/* line 180, ../panthor/sass/_bootstrap.scss */
+.input-lg {
+  height: 45px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+/* line 180, ../panthor/sass/_bootstrap.scss */
+select.input-lg {
+  height: 45px;
+  line-height: 45px;
+}
+
+/* line 181, ../panthor/sass/_bootstrap.scss */
+textarea.input-lg {
+  height: auto;
+}
+
+/* line 182, ../panthor/sass/_bootstrap.scss */
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+  width: 100%;
+}
+
+/* line 183, ../panthor/sass/_bootstrap.scss */
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+/* line 183, ../panthor/sass/_bootstrap.scss */
+.fade.in {
+  opacity: 1;
+}
+
+/* line 184, ../panthor/sass/_bootstrap.scss */
+.collapse {
+  display: none;
+}
+
+/* line 184, ../panthor/sass/_bootstrap.scss */
+.collapse.in {
+  display: block;
+}
+
+/* line 185, ../panthor/sass/_bootstrap.scss */
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
+/* line 186, ../panthor/sass/_bootstrap.scss */
+[data-toggle="buttons"] > .btn > input[type="radio"], [data-toggle="buttons"] > .btn > input[type="checkbox"] {
+  display: none;
+}
+
+/* line 187, ../panthor/sass/_bootstrap.scss */
+.thumbnail {
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 187, ../panthor/sass/_bootstrap.scss */
+.thumbnail > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 188, ../panthor/sass/_bootstrap.scss */
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+  border-color: #428bca;
+}
+
+/* line 189, ../panthor/sass/_bootstrap.scss */
+.thumbnail .caption {
+  padding: 9px;
+  color: #333333;
+}
+
+/* line 190, ../panthor/sass/_bootstrap.scss */
+.media, .media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+/* line 191, ../panthor/sass/_bootstrap.scss */
+.media, .media .media {
+  margin-top: 15px;
+}
+
+/* line 192, ../panthor/sass/_bootstrap.scss */
+.media:first-child {
+  margin-top: 0;
+}
+
+/* line 193, ../panthor/sass/_bootstrap.scss */
+.media-object {
+  display: block;
+}
+
+/* line 194, ../panthor/sass/_bootstrap.scss */
+.media-heading {
+  margin: 0 0 5px;
+}
+
+/* line 195, ../panthor/sass/_bootstrap.scss */
+.media > .pull-left {
+  margin-right: 10px;
+}
+
+/* line 196, ../panthor/sass/_bootstrap.scss */
+.media > .pull-right {
+  margin-left: 10px;
+}
+
+/* line 197, ../panthor/sass/_bootstrap.scss */
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 198, ../panthor/sass/_bootstrap.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 199, ../panthor/sass/_bootstrap.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 200, ../panthor/sass/_bootstrap.scss */
+.pull-right {
+  float: right !important;
+}
+
+/* line 201, ../panthor/sass/_bootstrap.scss */
+.pull-left {
+  float: left !important;
+}
+
+/* line 202, ../panthor/sass/_bootstrap.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 203, ../panthor/sass/_bootstrap.scss */
+.show {
+  display: block !important;
+}
+
+/* line 204, ../panthor/sass/_bootstrap.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 205, ../panthor/sass/_bootstrap.scss */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 206, ../panthor/sass/_bootstrap.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* line 207, ../panthor/sass/_bootstrap.scss */
+.affix {
+  position: fixed;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/* line 208, ../panthor/sass/_bootstrap.scss */
+.visible-xs, tr.visible-xs, th.visible-xs, td.visible-xs {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 209, ../panthor/sass/_bootstrap.scss */
+  .visible-xs {
+    display: block !important;
+  }
+
+  /* line 209, ../panthor/sass/_bootstrap.scss */
+  tr.visible-xs {
+    display: table-row !important;
+  }
+
+  /* line 209, ../panthor/sass/_bootstrap.scss */
+  th.visible-xs, td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 209, ../panthor/sass/_bootstrap.scss */
+  .visible-xs.visible-sm {
+    display: block !important;
+  }
+
+  /* line 209, ../panthor/sass/_bootstrap.scss */
+  tr.visible-xs.visible-sm {
+    display: table-row !important;
+  }
+
+  /* line 209, ../panthor/sass/_bootstrap.scss */
+  th.visible-xs.visible-sm, td.visible-xs.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 210, ../panthor/sass/_bootstrap.scss */
+  .visible-xs.visible-md {
+    display: block !important;
+  }
+
+  /* line 210, ../panthor/sass/_bootstrap.scss */
+  tr.visible-xs.visible-md {
+    display: table-row !important;
+  }
+
+  /* line 210, ../panthor/sass/_bootstrap.scss */
+  th.visible-xs.visible-md, td.visible-xs.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 211, ../panthor/sass/_bootstrap.scss */
+  .visible-xs.visible-lg {
+    display: block !important;
+  }
+
+  /* line 211, ../panthor/sass/_bootstrap.scss */
+  tr.visible-xs.visible-lg {
+    display: table-row !important;
+  }
+
+  /* line 211, ../panthor/sass/_bootstrap.scss */
+  th.visible-xs.visible-lg, td.visible-xs.visible-lg {
+    display: table-cell !important;
+  }
+}
+/* line 212, ../panthor/sass/_bootstrap.scss */
+.visible-sm, tr.visible-sm, th.visible-sm, td.visible-sm {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 213, ../panthor/sass/_bootstrap.scss */
+  .visible-sm.visible-xs {
+    display: block !important;
+  }
+
+  /* line 213, ../panthor/sass/_bootstrap.scss */
+  tr.visible-sm.visible-xs {
+    display: table-row !important;
+  }
+
+  /* line 213, ../panthor/sass/_bootstrap.scss */
+  th.visible-sm.visible-xs, td.visible-sm.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 214, ../panthor/sass/_bootstrap.scss */
+  .visible-sm {
+    display: block !important;
+  }
+
+  /* line 214, ../panthor/sass/_bootstrap.scss */
+  tr.visible-sm {
+    display: table-row !important;
+  }
+
+  /* line 214, ../panthor/sass/_bootstrap.scss */
+  th.visible-sm, td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 214, ../panthor/sass/_bootstrap.scss */
+  .visible-sm.visible-md {
+    display: block !important;
+  }
+
+  /* line 214, ../panthor/sass/_bootstrap.scss */
+  tr.visible-sm.visible-md {
+    display: table-row !important;
+  }
+
+  /* line 214, ../panthor/sass/_bootstrap.scss */
+  th.visible-sm.visible-md, td.visible-sm.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 215, ../panthor/sass/_bootstrap.scss */
+  .visible-sm.visible-lg {
+    display: block !important;
+  }
+
+  /* line 215, ../panthor/sass/_bootstrap.scss */
+  tr.visible-sm.visible-lg {
+    display: table-row !important;
+  }
+
+  /* line 215, ../panthor/sass/_bootstrap.scss */
+  th.visible-sm.visible-lg, td.visible-sm.visible-lg {
+    display: table-cell !important;
+  }
+}
+/* line 216, ../panthor/sass/_bootstrap.scss */
+.visible-md, tr.visible-md, th.visible-md, td.visible-md {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 217, ../panthor/sass/_bootstrap.scss */
+  .visible-md.visible-xs {
+    display: block !important;
+  }
+
+  /* line 217, ../panthor/sass/_bootstrap.scss */
+  tr.visible-md.visible-xs {
+    display: table-row !important;
+  }
+
+  /* line 217, ../panthor/sass/_bootstrap.scss */
+  th.visible-md.visible-xs, td.visible-md.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 218, ../panthor/sass/_bootstrap.scss */
+  .visible-md.visible-sm {
+    display: block !important;
+  }
+
+  /* line 218, ../panthor/sass/_bootstrap.scss */
+  tr.visible-md.visible-sm {
+    display: table-row !important;
+  }
+
+  /* line 218, ../panthor/sass/_bootstrap.scss */
+  th.visible-md.visible-sm, td.visible-md.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 219, ../panthor/sass/_bootstrap.scss */
+  .visible-md {
+    display: block !important;
+  }
+
+  /* line 219, ../panthor/sass/_bootstrap.scss */
+  tr.visible-md {
+    display: table-row !important;
+  }
+
+  /* line 219, ../panthor/sass/_bootstrap.scss */
+  th.visible-md, td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 219, ../panthor/sass/_bootstrap.scss */
+  .visible-md.visible-lg {
+    display: block !important;
+  }
+
+  /* line 219, ../panthor/sass/_bootstrap.scss */
+  tr.visible-md.visible-lg {
+    display: table-row !important;
+  }
+
+  /* line 219, ../panthor/sass/_bootstrap.scss */
+  th.visible-md.visible-lg, td.visible-md.visible-lg {
+    display: table-cell !important;
+  }
+}
+/* line 220, ../panthor/sass/_bootstrap.scss */
+.visible-lg, tr.visible-lg, th.visible-lg, td.visible-lg {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 221, ../panthor/sass/_bootstrap.scss */
+  .visible-lg.visible-xs {
+    display: block !important;
+  }
+
+  /* line 221, ../panthor/sass/_bootstrap.scss */
+  tr.visible-lg.visible-xs {
+    display: table-row !important;
+  }
+
+  /* line 221, ../panthor/sass/_bootstrap.scss */
+  th.visible-lg.visible-xs, td.visible-lg.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 222, ../panthor/sass/_bootstrap.scss */
+  .visible-lg.visible-sm {
+    display: block !important;
+  }
+
+  /* line 222, ../panthor/sass/_bootstrap.scss */
+  tr.visible-lg.visible-sm {
+    display: table-row !important;
+  }
+
+  /* line 222, ../panthor/sass/_bootstrap.scss */
+  th.visible-lg.visible-sm, td.visible-lg.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 223, ../panthor/sass/_bootstrap.scss */
+  .visible-lg.visible-md {
+    display: block !important;
+  }
+
+  /* line 223, ../panthor/sass/_bootstrap.scss */
+  tr.visible-lg.visible-md {
+    display: table-row !important;
+  }
+
+  /* line 223, ../panthor/sass/_bootstrap.scss */
+  th.visible-lg.visible-md, td.visible-lg.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 224, ../panthor/sass/_bootstrap.scss */
+  .visible-lg {
+    display: block !important;
+  }
+
+  /* line 224, ../panthor/sass/_bootstrap.scss */
+  tr.visible-lg {
+    display: table-row !important;
+  }
+
+  /* line 224, ../panthor/sass/_bootstrap.scss */
+  th.visible-lg, td.visible-lg {
+    display: table-cell !important;
+  }
+}
+/* line 225, ../panthor/sass/_bootstrap.scss */
+.hidden-xs {
+  display: block !important;
+}
+
+/* line 225, ../panthor/sass/_bootstrap.scss */
+tr.hidden-xs {
+  display: table-row !important;
+}
+
+/* line 226, ../panthor/sass/_bootstrap.scss */
+th.hidden-xs, td.hidden-xs {
+  display: table-cell !important;
+}
+
+@media (max-width: 767px) {
+  /* line 227, ../panthor/sass/_bootstrap.scss */
+  .hidden-xs, tr.hidden-xs, th.hidden-xs, td.hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 227, ../panthor/sass/_bootstrap.scss */
+  .hidden-xs.hidden-sm, tr.hidden-xs.hidden-sm, th.hidden-xs.hidden-sm, td.hidden-xs.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 228, ../panthor/sass/_bootstrap.scss */
+  .hidden-xs.hidden-md, tr.hidden-xs.hidden-md, th.hidden-xs.hidden-md, td.hidden-xs.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 229, ../panthor/sass/_bootstrap.scss */
+  .hidden-xs.hidden-lg, tr.hidden-xs.hidden-lg, th.hidden-xs.hidden-lg, td.hidden-xs.hidden-lg {
+    display: none !important;
+  }
+}
+/* line 230, ../panthor/sass/_bootstrap.scss */
+.hidden-sm {
+  display: block !important;
+}
+
+/* line 230, ../panthor/sass/_bootstrap.scss */
+tr.hidden-sm {
+  display: table-row !important;
+}
+
+/* line 231, ../panthor/sass/_bootstrap.scss */
+th.hidden-sm, td.hidden-sm {
+  display: table-cell !important;
+}
+
+@media (max-width: 767px) {
+  /* line 232, ../panthor/sass/_bootstrap.scss */
+  .hidden-sm.hidden-xs, tr.hidden-sm.hidden-xs, th.hidden-sm.hidden-xs, td.hidden-sm.hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 233, ../panthor/sass/_bootstrap.scss */
+  .hidden-sm, tr.hidden-sm, th.hidden-sm, td.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 233, ../panthor/sass/_bootstrap.scss */
+  .hidden-sm.hidden-md, tr.hidden-sm.hidden-md, th.hidden-sm.hidden-md, td.hidden-sm.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 234, ../panthor/sass/_bootstrap.scss */
+  .hidden-sm.hidden-lg, tr.hidden-sm.hidden-lg, th.hidden-sm.hidden-lg, td.hidden-sm.hidden-lg {
+    display: none !important;
+  }
+}
+/* line 235, ../panthor/sass/_bootstrap.scss */
+.hidden-md {
+  display: block !important;
+}
+
+/* line 235, ../panthor/sass/_bootstrap.scss */
+tr.hidden-md {
+  display: table-row !important;
+}
+
+/* line 236, ../panthor/sass/_bootstrap.scss */
+th.hidden-md, td.hidden-md {
+  display: table-cell !important;
+}
+
+@media (max-width: 767px) {
+  /* line 237, ../panthor/sass/_bootstrap.scss */
+  .hidden-md.hidden-xs, tr.hidden-md.hidden-xs, th.hidden-md.hidden-xs, td.hidden-md.hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 238, ../panthor/sass/_bootstrap.scss */
+  .hidden-md.hidden-sm, tr.hidden-md.hidden-sm, th.hidden-md.hidden-sm, td.hidden-md.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 239, ../panthor/sass/_bootstrap.scss */
+  .hidden-md, tr.hidden-md, th.hidden-md, td.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 239, ../panthor/sass/_bootstrap.scss */
+  .hidden-md.hidden-lg, tr.hidden-md.hidden-lg, th.hidden-md.hidden-lg, td.hidden-md.hidden-lg {
+    display: none !important;
+  }
+}
+/* line 240, ../panthor/sass/_bootstrap.scss */
+.hidden-lg {
+  display: block !important;
+}
+
+/* line 240, ../panthor/sass/_bootstrap.scss */
+tr.hidden-lg {
+  display: table-row !important;
+}
+
+/* line 241, ../panthor/sass/_bootstrap.scss */
+th.hidden-lg, td.hidden-lg {
+  display: table-cell !important;
+}
+
+@media (max-width: 767px) {
+  /* line 242, ../panthor/sass/_bootstrap.scss */
+  .hidden-lg.hidden-xs, tr.hidden-lg.hidden-xs, th.hidden-lg.hidden-xs, td.hidden-lg.hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 243, ../panthor/sass/_bootstrap.scss */
+  .hidden-lg.hidden-sm, tr.hidden-lg.hidden-sm, th.hidden-lg.hidden-sm, td.hidden-lg.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 244, ../panthor/sass/_bootstrap.scss */
+  .hidden-lg.hidden-md, tr.hidden-lg.hidden-md, th.hidden-lg.hidden-md, td.hidden-lg.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 245, ../panthor/sass/_bootstrap.scss */
+  .hidden-lg, tr.hidden-lg, th.hidden-lg, td.hidden-lg {
+    display: none !important;
+  }
+}
+/* line 246, ../panthor/sass/_bootstrap.scss */
+.visible-print, tr.visible-print, th.visible-print, td.visible-print {
+  display: none !important;
+}
+
+@media print {
+  /* line 247, ../panthor/sass/_bootstrap.scss */
+  .visible-print {
+    display: block !important;
+  }
+
+  /* line 247, ../panthor/sass/_bootstrap.scss */
+  tr.visible-print {
+    display: table-row !important;
+  }
+
+  /* line 247, ../panthor/sass/_bootstrap.scss */
+  th.visible-print, td.visible-print {
+    display: table-cell !important;
+  }
+
+  /* line 247, ../panthor/sass/_bootstrap.scss */
+  .hidden-print, tr.hidden-print, th.hidden-print, td.hidden-print {
+    display: none !important;
+  }
+}
+/* Global Styles */
+/* line 3, ../panthor/sass/_global.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, serif;
+}
+
+/* line 9, ../panthor/sass/_global.scss */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
+/* line 12, ../panthor/sass/_global.scss */
+h1 a, h2 a, h3 a {
+  color: inherit;
+}
+
+/* line 16, ../panthor/sass/_global.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 20, ../panthor/sass/_global.scss */
+hr {
+  height: 1px;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 25, ../panthor/sass/_global.scss */
+p, li {
+  font-size: 1.1428571429em;
+  line-height: 1.5;
+}
+
+/* line 29, ../panthor/sass/_global.scss */
+ul, ol {
+  margin: 20px 0 0 25px;
+  padding: 0;
+}
+
+/* line 33, ../panthor/sass/_global.scss */
+li {
+  padding: 4px 0;
+}
+/* line 35, ../panthor/sass/_global.scss */
+li ul, li ol {
+  margin-top: 0;
+}
+/* line 38, ../panthor/sass/_global.scss */
+li li {
+  font-size: 1em;
+}
+/* line 40, ../panthor/sass/_global.scss */
+li li:last-child {
+  padding-bottom: 0;
+}
+
+/* line 45, ../panthor/sass/_global.scss */
+blockquote, q {
+  font-style: italic;
+  margin-left: 18px;
+  border-left: 8px solid #888;
+  border-left: 8px solid rgba(0, 0, 0, 0.6);
+}
+
+/* line 51, ../panthor/sass/_global.scss */
+.wp-caption {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 4px 8px;
+  border: 1px solid #888;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+/* line 57, ../panthor/sass/_global.scss */
+.wp-caption img {
+  margin-bottom: 0;
+}
+
+/* line 61, ../panthor/sass/_global.scss */
+.wp-caption-text {
+  font-size: 1em;
+  margin-bottom: 0;
+  padding-top: 8px;
+}
+
+/* line 66, ../panthor/sass/_global.scss */
+.alignleft {
+  float: left;
+  margin-right: 12px;
+}
+
+/* line 70, ../panthor/sass/_global.scss */
+.alignright {
+  float: right;
+  margin-left: 12px;
+}
+
+/* line 74, ../panthor/sass/_global.scss */
+.aligncenter {
+  text-align: center;
+}
+
+/* line 77, ../panthor/sass/_global.scss */
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 80, ../panthor/sass/_global.scss */
+table th {
+  font-weight: bold;
+  font-size: 1.1428571429em;
+  padding: 4px 6px;
+}
+/* line 85, ../panthor/sass/_global.scss */
+table td {
+  border-top: 1px solid #888;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 4px 6px;
+  border-left: 1px solid #888;
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
+}
+/* line 91, ../panthor/sass/_global.scss */
+table td:first-child {
+  border-left: none;
+}
+
+/* line 96, ../panthor/sass/_global.scss */
+dt {
+  font-weight: bold;
+  font-size: 1.1428571429em;
+  text-decoration: underline;
+}
+
+/* line 101, ../panthor/sass/_global.scss */
+dd {
+  padding: 4px 0 8px 12px;
+}
+
+/* line 104, ../panthor/sass/_global.scss */
+code {
+  white-space: normal;
+}
+
+/* line 107, ../panthor/sass/_global.scss */
+.sticky {
+  display: block;
+}
+
+/* line 110, ../panthor/sass/_global.scss */
+.gallery-caption {
+  line-height: 1.2857142857;
+}
+
+/* line 113, ../panthor/sass/_global.scss */
+.bypostauthor {
+  background: #f1f1f1;
+}
+
+/* line 118, ../panthor/sass/_global.scss */
+.media .media-item {
+  float: left;
+  margin: 0 20px 0 0;
+  width: 300px;
+}
+/* line 122, ../panthor/sass/_global.scss */
+.media .media-item img {
+  width: 100%;
+  margin: 0;
+}
+/* line 127, ../panthor/sass/_global.scss */
+.media .media-body {
+  text-align: left;
+}
+@media (max-width: 47.9375em) {
+  /* line 131, ../panthor/sass/_global.scss */
+  .media .media-item {
+    display: block;
+    float: none;
+    margin: 0 0 20px 0;
+    text-align: center;
+    width: auto;
+  }
+  /* line 137, ../panthor/sass/_global.scss */
+  .media .media-item img {
+    width: auto;
+  }
+}
+
+/* line 143, ../panthor/sass/_global.scss */
+.btn {
+  background-color: #555;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+}
+/* line 150, ../panthor/sass/_global.scss */
+.btn:hover {
+  background-color: #666;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Side Menu */
+/* line 3, ../panthor/sass/_side-menu.scss */
+#sidebar-wrapper {
+  margin-right: -250px;
+  right: 0;
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+/* line 16, ../panthor/sass/_side-menu.scss */
+#sidebar-wrapper h1 {
+  display: none;
+}
+
+/* line 21, ../panthor/sass/_side-menu.scss */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 28, ../panthor/sass/_side-menu.scss */
+.sidebar-nav li {
+  padding: 8px 12px;
+  font-size: 1.1428571429em;
+  line-height: 1.25;
+  border-bottom: 1px solid #444;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* line 34, ../panthor/sass/_side-menu.scss */
+.sidebar-nav li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+/* line 38, ../panthor/sass/_side-menu.scss */
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+/* line 42, ../panthor/sass/_side-menu.scss */
+.sidebar-nav li:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+}
+/* line 47, ../panthor/sass/_side-menu.scss */
+.sidebar-nav li.active {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 53, ../panthor/sass/_side-menu.scss */
+#menu-toggle {
+  top: 20px;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  font-size: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  border-color: #000;
+}
+
+/* line 65, ../panthor/sass/_side-menu.scss */
+#menu-close {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1.7142857143em;
+  margin: 0;
+}
+
+/* line 72, ../panthor/sass/_side-menu.scss */
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 82, ../panthor/sass/_side-menu.scss */
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+/* line 1, ../panthor/sass/_panels.scss */
+body {
+  text-align: center;
+}
+
+/* line 5, ../panthor/sass/_panels.scss */
+.hentry.shadows {
+  box-shadow: inset 0 3px 8px 0 rgba(0, 0, 0, 0.5), inset 0 -3px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* line 9, ../panthor/sass/_panels.scss */
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: #fff;
+}
+
+/* line 16, ../panthor/sass/_panels.scss */
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 20, ../panthor/sass/_panels.scss */
+.vert-text .trans {
+  display: block;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 24, ../panthor/sass/_panels.scss */
+.vert-text .trans a {
+  color: #fff;
+}
+/* line 27, ../panthor/sass/_panels.scss */
+.callout .vert-text .trans {
+  padding: 0 40px;
+}
+/* line 31, ../panthor/sass/_panels.scss */
+.vert-text h1 {
+  padding: 10px 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+  position: relative;
+}
+/* line 37, ../panthor/sass/_panels.scss */
+.vert-text h1 span {
+  background: -webkit-linear-gradient(top, #999999 0, white 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* line 42, ../panthor/sass/_panels.scss */
+.vert-text h1:after {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  left: 20%;
+  content: '';
+  height: 2px;
+  background: rgba(0, 0, 0, 0.25);
+}
+/* line 52, ../panthor/sass/_panels.scss */
+.vert-text h2, .vert-text h3 {
+  margin-top: 0;
+  padding: 15px 0;
+}
+/* line 57, ../panthor/sass/_panels.scss */
+.vert-text p:last-child {
+  padding-bottom: 15px;
+}
+/* line 61, ../panthor/sass/_panels.scss */
+.vert-text ul {
+  text-align: left;
+  margin: 15px 25%;
+}
+
+/* Intro */
+/* line 69, ../panthor/sass/_panels.scss */
+.intro {
+  padding: 50px 0;
+  text-align: left;
+}
+/* line 72, ../panthor/sass/_panels.scss */
+.intro img {
+  margin-bottom: 12px;
+}
+/* line 76, ../panthor/sass/_panels.scss */
+.intro .wp-caption img {
+  margin-bottom: 0;
+}
+/* line 81, ../panthor/sass/_panels.scss */
+.intro.image-above img {
+  margin-bottom: 20px;
+}
+
+/* Callout */
+/* line 89, ../panthor/sass/_panels.scss */
+.callout {
+  color: #fff;
+  display: table;
+  height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  /* line 2, ../panthor/sass/_mobile.scss */
+  .header {
+    height: auto;
+  }
+
+  /* line 5, ../panthor/sass/_mobile.scss */
+  .header .btn {
+    display: none;
+  }
+
+  /* line 8, ../panthor/sass/_mobile.scss */
+  .vert-text h1 {
+    padding: 20px 0;
+    font-size: 2.25em;
+  }
+
+  /* line 12, ../panthor/sass/_mobile.scss */
+  .vert-text h1 span {
+    display: block;
+  }
+
+  /* line 15, ../panthor/sass/_mobile.scss */
+  .vert-text h3 {
+    font-size: 1.375em;
+    margin-bottom: 0;
+  }
+
+  /* line 19, ../panthor/sass/_mobile.scss */
+  h2 {
+    font-size: 1.75em;
+  }
+
+  /* line 22, ../panthor/sass/_mobile.scss */
+  #menu-toggle {
+    top: 2px;
+  }
+
+  /* line 25, ../panthor/sass/_mobile.scss */
+  .callout {
+    height: 120px;
+  }
+
+  /* line 28, ../panthor/sass/_mobile.scss */
+  .intro {
+    padding: 20px 0;
+  }
+
+  /* line 31, ../panthor/sass/_mobile.scss */
+  .col-sm-2, .col-sm-3, .col-sm-4 {
+    text-align: center;
+  }
+  /* line 33, ../panthor/sass/_mobile.scss */
+  .col-sm-2 img, .col-sm-3 img, .col-sm-4 img {
+    margin: 0 auto;
+    max-height: 200px;
+    width: auto;
+  }
+}
+@media print {
+  /* line 2, ../panthor/sass/_print.scss */
+  .hide-print, iframe, object, .fluid-width-video-wrapper {
+    display: none;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-1 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-2 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-3 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-4 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-5 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-6 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-7 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-8 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-9 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-10 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-11 {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 6, ../panthor/sass/_print.scss */
+  .col-md-12 {
+    float: none;
+    width: 100%;
+  }
+}
+/* line 18, sass/style.scss */
+h1, h2, h3, h5, h5 {
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+/* line 22, sass/style.scss */
+header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #5ea8c4;
+  border-bottom: 2px solid #3091a8;
+  text-align: left;
+}
+/* line 32, sass/style.scss */
+header ul {
+  float: right;
+  list-style: none;
+  margin: 6px 18px 0 0;
+  padding: 0;
+}
+/* line 38, sass/style.scss */
+header li {
+  display: inline-block;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 0 0 4px;
+}
+/* line 44, sass/style.scss */
+header li a {
+  display: block;
+  background: #3091a8;
+  color: #fff;
+  padding: 8px 8px 8px 24px;
+  -moz-transition: all, 0.25s;
+  -o-transition: all, 0.25s;
+  -webkit-transition: all, 0.25s;
+  transition: all, 0.25s;
+}
+/* line 50, sass/style.scss */
+header li a:hover {
+  text-decoration: none;
+  background: #ffecd7;
+  color: #3091a8;
+}
+/* line 54, sass/style.scss */
+header li a:hover:after {
+  border-color: transparent transparent transparent #ffecd7;
+}
+/* line 58, sass/style.scss */
+header li a:after {
+  -moz-transition: all, 0.25s;
+  -o-transition: all, 0.25s;
+  -webkit-transition: all, 0.25s;
+  transition: all, 0.25s;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18.5px 0 18.5px 17px;
+  border-color: transparent transparent transparent #3091a8;
+  position: absolute;
+  right: -17px;
+  top: 0;
+  z-index: 10;
+}
+/* line 71, sass/style.scss */
+header li a:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18.5px 0 18.5px 17px;
+  border-color: transparent transparent transparent #5ea8c4;
+  position: absolute;
+  left: 4px;
+  top: 0;
+}
+/* line 84, sass/style.scss */
+header li:first-child a {
+  padding-left: 16px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/* line 88, sass/style.scss */
+header li:first-child a:before {
+  display: none;
+}
+/* line 94, sass/style.scss */
+header li:last-child a {
+  padding-right: 12px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* line 98, sass/style.scss */
+header li:last-child a:after {
+  display: none;
+}
+/* line 104, sass/style.scss */
+header h1 {
+  padding-left: 18px;
+  line-height: 50px;
+  margin: 0;
+  font-size: 2.2rem;
+  color: #ffecd7;
+}
+/* line 111, sass/style.scss */
+.admin-bar header {
+  top: 32px;
+}
+
+/* line 115, sass/style.scss */
+.vert-text {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 119, sass/style.scss */
+.vert-text .trans {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+/* line 126, sass/style.scss */
+.vert-text h1:after {
+  display: none;
+}
+/* line 129, sass/style.scss */
+.vert-text h1 span {
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+/* line 135, sass/style.scss */
+.vert-text h3 {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* line 140, sass/style.scss */
+.intro {
+  padding: 30px 0;
+}
+
+/* line 144, sass/style.scss */
+.panel-grid .panel-grid-cell {
+  padding: 0 30px;
+}
+/* line 147, sass/style.scss */
+.panel-grid .origin-widget.origin-widget-testimonial-simple-clean {
+  border: 4px solid #5ea8c4;
+  position: relative;
+}
+/* line 151, sass/style.scss */
+.panel-grid .textwidget {
+  font-size: 1.1428571429em;
+}
+/* line 153, sass/style.scss */
+.panel-grid .textwidget h3 {
+  margin-top: 0;
+}
+/* line 156, sass/style.scss */
+.panel-grid .textwidget ul {
+  margin: 10px 0 10px 25px;
+}
+
+/* line 161, sass/style.scss */
+table {
+  border: none;
+}
+
+/* line 164, sass/style.scss */
+th {
+  background: #5ea8c4;
+  color: #fff;
+  font-weight: bold;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+/* line 172, sass/style.scss */
+tr td {
+  background: #ededed;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+/* line 178, sass/style.scss */
+tr:nth-child(even) td {
+  background: #b3b3b3;
+}
+
+/* line 183, sass/style.scss */
+.btn {
+  background: #5ea8c4;
+  border: 1px solid #3091a8;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
