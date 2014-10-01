@@ -15,115 +15,205 @@ $charcoal: #333;
 $red: #AE1B3A;
 $blueDark: #3091A8;
 $blueLight: #5EA8C4;
+
 body {
   position: relative;
+  &.admin-bar {
+    padding-top: 32px;
+  }
 }
 h1, h2, h3, h5, h5 {
   text-shadow: none;
   text-transform: uppercase;
 }
+@include breakpoint(phone){
+  h1 {
+    font-size: 2.4rem;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  h5, h6 {
+    font-weight: bold;
+  }
+}
 header {
-  position: fixed;
-  height: 50px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+  min-height: 50px;
   background: $blueLight;
   border-bottom: 2px solid $blueDark;
   text-align: left;
+  width: 100%;
+  z-index: 1000;
+  position: relative;
   ul {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     list-style: none;
-    margin: 6px 18px 0 0;
-    padding: 0;
-    position: relative;
+    background: $blueLight;
+    padding-top: 48px;
+    margin-top: 0;
+    &.active {
+      li {
+        display: block;
+      }
+    }
   }
   li {
-    display: inline-block;
-    font-size: 1.4rem;
     text-transform: uppercase;
-    position: relative;
-    padding: 0 0 0 4px;
+    display: block;
+    padding: 0;
+    display: none;
+    &:nth-child(2) {
+      a {
+        border-top: 2px solid $blueDark;
+        @include breakpoint(desktop){
+          border-top: none;
+        }
+      }
+    }
     a {
       display: block;
-      background: $blueDark;
-      color: #fff;
-      padding: 8px 8px 8px 24px;
-      @include transition(all, .25s);
-      &:hover {
+      color: $beige;
+      border-top: 1px solid $blueDark;
+      padding: 4px 12px;
+      &:hover, &:active {
+        background: $blueDark;
+        color: $beige;
         text-decoration: none;
-        background: $beige;
-        color: $blueDark;
-        &:after {
-          border-color: transparent transparent transparent $beige;
-        }
       }
-      &:after {
+    }
+    &.menu-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      border: 1px solid $blueDark;
+      @include breakpoint(desktop){
+        display: none;
+      }
+      @include breakpoint(phone){
+        border-top: none;
+      }
+      a {
+        padding: 12px;
+        background: $blueDark;
+        white-space: nowrap;
+      }
+    }
+  }
+  @include breakpoint(tablet){
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @include breakpoint(desktop){
+    position: fixed;
+    top: 0;
+    left: 0;
+    .admin-bar & {
+      top: 32px;
+    }
+    ul {
+      float: right;
+      list-style: none;
+      margin: 6px 18px 6px 0;
+      padding: 0;
+      position: relative;
+    }
+    li {
+      display: inline-block;
+      font-size: 1.4rem;
+      position: relative;
+      padding: 0 0 0 2px;
+      a {
+        border: none;
+        display: block;
+        background: $blueDark;
+        color: #fff;
+        padding: 8px 8px 8px 24px;
         @include transition(all, .25s);
-        content: '';
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 18.5px 0 18.5px 17px;
-        border-color: transparent transparent transparent $blueDark;
-        position: absolute;
-        right: -17px;
-        top: 0;
-        z-index: 10;
-      }
-      &:before {
-        content: '';
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 18.5px 0 18.5px 17px;
-        border-color: transparent transparent transparent $blueLight;
-        position: absolute;
-        left: 4px;
-        top: 0;
-      }
-    }
-    &:first-child {
-      a {
-        padding-left: 16px;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
+        &:hover {
+          text-decoration: none;
+          background: $beige;
+          color: $blueDark;
+          &:after {
+            border-color: transparent transparent transparent $beige;
+          }
+        }
+        &:after {
+          @include transition(all, .25s);
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 18.5px 0 18.5px 17px;
+          border-color: transparent transparent transparent $blueDark;
+          position: absolute;
+          right: -17px;
+          top: 0;
+          z-index: 10;
+        }
         &:before {
-          display: none;
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 18.5px 0 18.5px 17px;
+          border-color: transparent transparent transparent $blueLight;
+          position: absolute;
+          left: 2px;
+          top: 0;
         }
       }
-    }
-    &:last-child {
-      a {
-        padding-right: 12px;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        &:after {
-          display: none;
+      &:first-child {
+        a {
+          padding-left: 16px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          &:before {
+            display: none;
+          }
         }
       }
-    }
-    &.active {
-      a {
-        background: $beige;
-        color: $blueDark;
-        &:after {
-          border-color: transparent transparent transparent $beige;
+      &:last-child {
+        a {
+          padding-right: 12px;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          &:after {
+            display: none;
+          }
+        }
+      }
+      &.active {
+        a {
+          background: $beige;
+          color: $blueDark;
+          &:after {
+            border-color: transparent transparent transparent $beige;
+          }
         }
       }
     }
   }
-  h1 {
-    padding-left: 18px;
-    line-height: 50px;
-    margin: 0;
-    font-size: 2.2rem;
-    color: $beige;
-  }
-  .admin-bar & {
-    top: 32px;
-  }
+}
+.main-logo {
+  float: left;
+  padding-left: 18px;
+  line-height: 50px;
+  margin: 0;
+  font-size: 2.2rem;
+  color: $beige;
+  position: relative;
+  z-index: 101;
 }
 .vert-text {
   display: table;
@@ -152,10 +242,22 @@ header {
 }
 .intro {
   padding: 30px 0;
+  @include breakpoint(phone){
+    padding: 18px 0;
+  }
 }
 .panel-grid {
   .panel-grid-cell {
     padding: 0 30px;
+  }
+  .container & {
+    @include breakpoint(phone){
+      margin-bottom: 10px !important;
+      padding-top: 20px;
+      .panel-grid-cell {
+        margin-bottom: 10px !important;
+      }
+    }
   }
   .origin-widget.origin-widget-testimonial-simple-clean {
     border: 4px solid $blueLight;
@@ -199,4 +301,9 @@ tr {
   border-radius: 0;
   text-transform: uppercase;
   font-size: 0.75em;
+}
+.container {
+  @include breakpoint(phone){
+    word-break: break-word;
+  }
 }

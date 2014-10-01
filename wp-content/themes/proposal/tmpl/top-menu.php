@@ -1,6 +1,8 @@
 <a name="#home"></a>
 <header role="banner" id="spy-nav">
+  <h1 class="main-logo">VocePlatforms</h1>
   <ul class="nav">
+    <li class="menu-toggle"><a href="#">Menu +</a></li>
   <?php
   // This is not a subpage
   $children = get_pages( array(
@@ -21,6 +23,5 @@
   wp_reset_query();
   ?>
   </ul>
-  <h1 class="main-logo">VocePlatforms</h1>
   <div class="clr"></div>
 </header>
