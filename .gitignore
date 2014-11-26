@@ -27,8 +27,5 @@ REVISION
 /wp-content/drop-ins/*
 /wp-content/mu-plugins/*
 
-# non-composer managed plugins
-!/wp-content/plugins/simple-page-ordering
-
 # for this app, composer manages the theme
 /wp-content/themes/*
